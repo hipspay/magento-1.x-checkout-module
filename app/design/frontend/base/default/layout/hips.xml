@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <hips_onepage_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>        
+        <reference name="content">
+            <block type="core/template" name="checkout" template="hips/onepage/checkout.phtml" />
+        </reference>
+    </hips_onepage_index>
+    <hips_onepage_success>
+        <reference name="content">
+            <block type="core/template" name="checkout.success" template="hips/onepage/success.phtml" />
+        </reference>
+    </hips_onepage_success>
+    <hips_onepage_failure>
+        <reference name="content">
+            <block type="core/template" name="checkout.failure" template="hips/onepage/failure.phtml" />
+        </reference>
+    </hips_onepage_failure>
+</layout> 

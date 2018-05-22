@@ -1,0 +1,26 @@
+<?php
+/** @var $this Hips_Hipspay_Block_Form */
+
+
+$_code = 'cardpay';
+
+?>
+
+<script>
+    //<![CDATA[
+    Hips.public_key="<?php echo  Mage::getStoreConfig('payment/cardpay/public_key') ?>";
+
+    function tokenize($super){
+        Hips.card.getToken('#co-payment-form', function(token, error){
+            if(error){
+                alert('Error: '+error.message);
+            } else {
+                var card = $('<?php echo $_code ?>_card_token');
+                card.value = token;
+                $super();
+                return;
+            }
+        });
+    }
+    //]]>
+</script>

@@ -1,0 +1,16 @@
+<div class="hips-wrap">
+    <div class="hips-inner-wrap">
+        <script src="https://cdn.hips.com/js/v1/hips.js"></script>
+        <script>
+            Hips.checkout({
+                token: '<?php echo Mage::registry("token");?>',
+                <?php if(Mage::getStoreConfig('payment/hips/hips_style') != ''){ ?>
+                style: {
+                    <?php echo Mage::getStoreConfig('payment/hips/hips_style'); ?>
+                }
+                <?php } ?>
+            });
+        </script>
+
+    </div>
+</div>
