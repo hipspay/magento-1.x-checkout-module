@@ -5,7 +5,7 @@
 1. Download our latest Magento 1.x Checkout module [here](https://github.com/hipspay/magento-1.x-checkout-module/releases).
 2. Disable and flush Magneto Cache from admin area. Go to System → Cache Management.
 3. Make sure that you have compilation disabled before installing extension. System → Tools → Compilation page and click on Disable button. After Installation you can reenable compilation.
-4. Extract [Hips.M1.v1.0.zip](https://github.com/hipspay/magento-1.x-checkout-module/releases). Upload the app folder to your Magento root directory using a FTP client. 
+4. Extract [Hips.M1.v1.x.zip](https://github.com/hipspay/magento-1.x-checkout-module/releases). Upload the app folder to your Magento root directory using a FTP client. 
 5. Logout out of admin.
 6. Login to admin. Go to System → Configuration.
 7. Go to SALES → Payment Method.
