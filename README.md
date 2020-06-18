@@ -1,5 +1,8 @@
 <p align="center"><img src="https://hips.com/logo.svg"></p>
 
+##DEPRICATION WARNING!!!
+#End of life for Magento 1 on July, 1st 2020 !!!
+
 # Magento 1.x setup instructions
 
 1. Download our latest Magento 1.x Checkout module [here](https://github.com/hipspay/magento-1.x-checkout-module/releases).
